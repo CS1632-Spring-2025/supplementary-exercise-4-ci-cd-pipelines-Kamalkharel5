@@ -52,7 +52,6 @@ jobs:
         path: .
   # Uploads dependency graph to GitHub to receive Dependabot alerts 
   update_dependence_graph:
-    
     - name: Restore cached build
       uses: actions/cache@v3
       with:
