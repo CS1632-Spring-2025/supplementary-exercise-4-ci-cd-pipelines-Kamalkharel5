@@ -59,7 +59,8 @@ jobs:
         key: cached-build-${{github.sha}}
         path: .
     
-    needs: maven_test # Ensure this job runs after maven_test
+    needs: [maven_test] # Ensure this job runs after maven_test
+    
     runs-on: ubuntu-latest
     permissions:
       contents: write
